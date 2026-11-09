@@ -1,4 +1,4 @@
-package eg.qu.edu.yousr;
+package eg.qu.edu.studentportal;
 
 import android.app.Activity;
 import android.app.DownloadManager;
@@ -25,8 +25,7 @@ import android.widget.Toast;
 import android.app.AlertDialog;
 
 public class MainActivity extends Activity {
-    // تم تغيير الرابط هنا
-    private static final String HOME_URL = "https://mispg.qu.edu.eg/yousr/";
+    private static final String HOME_URL = "https://mispg.qu.edu.eg/StudentPortal/";
     private WebView webView;
     private ProgressBar progressBar;
     private ValueCallback<Uri[]> filePathCallback;
@@ -41,8 +40,10 @@ public class MainActivity extends Activity {
         FrameLayout root = new FrameLayout(this);
         webView = new WebView(this);
         
-        // 👇 سطر تعطيل تسريع العتاد لحل مشكلة الشاشة البيضاء على الأجهزة القديمة
+        // =========================================================
+        // 👇 تم إضافة هذا السطر لتعطيل تسريع العتاد على الأجهزة القديمة
         webView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+        // =========================================================
 
         progressBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
         progressBar.setMax(100);
