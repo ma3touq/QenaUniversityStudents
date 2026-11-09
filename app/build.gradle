@@ -20,8 +20,10 @@ android {
     }
 
     buildTypes {
-        release {
-            minifyEnabled false
-        }
+    debug {
+        applicationIdSuffix '.webviewtest'
+    }
+    release {
+        minifyEnabled false
     }
 }
