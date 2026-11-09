@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'eg.qu.edu.yousr'
+    namespace 'eg.qu.edu.studentportal'
     compileSdk 35
 
     defaultConfig {
-        applicationId 'eg.qu.edu.yousr'
+        applicationId 'eg.qu.edu.studentportal'
         minSdk 23
         targetSdk 35
         versionCode 1
